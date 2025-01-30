@@ -517,7 +517,7 @@ const limitesDesconto = {
     back: 233,
     estoquista: 233,
     motorista: 5000,
-    estagiario: 150,
+    estagiario: 200,
     operador: 320,
     franqueado: 320,
     back: 233,
@@ -781,7 +781,7 @@ function formatarReais(valor) {
         const diaAtual = dataAtual.getDate();
 
         // Verificar se o dia atual está entre 15 e 20
-        if (diaAtual >= 28 && diaAtual <= 30) {
+        if (diaAtual >= 28 && diaAtual <= 4) {
             // Liberar a página para interação
             document.getElementById('banner').style.display = 'none';  // Esconde o banner
             document.body.style.pointerEvents = 'auto';  // Libera a interação na página

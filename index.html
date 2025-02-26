@@ -769,13 +769,15 @@ function formatarReais(valor) {
 
 
 
+<script>
     // Função para verificar a disponibilidade do formulário
     function verificarDisponibilidadeFormulario() {
         const dataAtual = new Date();
-        const diaAtual = dataAtual.getDate();
+        const dataInicio = new Date('2025-03-05T14:00:00');  // 5 de março às 14h
+        const dataFim = new Date('2025-03-15T23:59:59');    // 15 de março
 
-        // Verificar se o dia atual está entre 15 e 20
-        if (diaAtual >= 1 && diaAtual <= 20) {
+        // Verificar se a data atual está entre 05/03 às 14h e 15/03
+        if (dataAtual >= dataInicio && dataAtual <= dataFim) {
             // Liberar a página para interação
             document.getElementById('banner').style.display = 'none';  // Esconde o banner
             document.body.style.pointerEvents = 'auto';  // Libera a interação na página
@@ -792,7 +794,7 @@ function formatarReais(valor) {
 
 <!-- Banner informativo que será exibido quando o formulário estiver bloqueado -->
 <div id="banner" style="position: fixed; top: 0; left: 0; width: 100%; background-color: rgb(255, 73, 1); text-align: center; color: #fff; padding: 10px; font-size: 16px; font-weight: bold; display: none;">
-    Formulário indisponivel no momento, normalizara da 28 de janeiro data limite até 31, agradeço a compreensão. 
+    Formulário indisponivel no momento, estará disponível dia 05/03/2025 às 14h devido a virada do ciclo, agradeço a compreensão.
 </div>
 
 </script>

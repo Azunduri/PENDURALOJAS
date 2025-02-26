@@ -773,11 +773,11 @@ function formatarReais(valor) {
     // Função para verificar a disponibilidade do formulário
     function verificarDisponibilidadeFormulario() {
         const dataAtual = new Date();
-        const dataInicio = new Date('2025-03-05T14:00:00');  // 5 de março às 14h
-        const dataFim = new Date('2025-03-15T23:59:59');    // 15 de março
+        const diaAtual = dataAtual.getDate();
+        const horaAtual = dataAtual.getHours();
 
-        // Verificar se a data atual está entre 05/03 às 14h e 15/03
-        if (dataAtual >= dataInicio && dataAtual <= dataFim) {
+        // Verificar se o dia atual está entre 5 e 15 e a hora é 14h
+        if (diaAtual >= 26 && diaAtual <= 26 && horaAtual === 18) {
             // Liberar a página para interação
             document.getElementById('banner').style.display = 'none';  // Esconde o banner
             document.body.style.pointerEvents = 'auto';  // Libera a interação na página

@@ -777,7 +777,7 @@ function formatarReais(valor) {
         const horaAtual = dataAtual.getHours();
 
         // Verificar se o dia atual está entre 5 e 15 e a hora é 14h
-        if (diaAtual >= 26 && diaAtual <= 26 && horaAtual === 19) {
+        if (diaAtual >= 5 && diaAtual <= 15 && horaAtual === 14) {
             // Liberar a página para interação
             document.getElementById('banner').style.display = 'none';  // Esconde o banner
             document.body.style.pointerEvents = 'auto';  // Libera a interação na página
@@ -791,6 +791,7 @@ function formatarReais(valor) {
     // Chama a função quando a página for carregada
     window.onload = verificarDisponibilidadeFormulario;
 </script>
+
 
 <!-- Banner informativo que será exibido quando o formulário estiver bloqueado -->
 <div id="banner" style="position: fixed; top: 0; left: 0; width: 100%; background-color: rgb(255, 73, 1); text-align: center; color: #fff; padding: 10px; font-size: 16px; font-weight: bold; display: none;">

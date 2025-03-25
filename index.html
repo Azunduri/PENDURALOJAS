@@ -778,7 +778,7 @@ function formatarReais(valor) {
         const horaAtual = dataAtual.getHours();
 
         // Verificar se o dia atual está entre 5 e 15 e a hora é 14h
-        if (diaAtual >= 4 && diaAtual <= 15) {
+        if (diaAtual >= 1 && diaAtual <= 10) {
             // Liberar a página para interação
             document.getElementById('banner').style.display = 'none';  // Esconde o banner
             document.body.style.pointerEvents = 'auto';  // Libera a interação na página
@@ -796,7 +796,7 @@ function formatarReais(valor) {
 
 <!-- Banner informativo que será exibido quando o formulário estiver bloqueado -->
 <div id="banner" style="position: fixed; top: 0; left: 0; width: 100%; background-color: rgb(255, 73, 1); text-align: center; color: #fff; padding: 10px; font-size: 16px; font-weight: bold; display: none;">
-    Formulário indisponivel no momento, estará disponível dia 05/03/2025 às 14h devido a virada do ciclo, agradeço a compreensão.
+    Formulário indisponivel no momento, estará disponível a partir do dia 1 à 10
 </div>
 
 </script>

@@ -802,7 +802,7 @@ function gerarPDFDocumento(cpf, nome, loja, cargo, produtos, quantidade, totalDe
         const diaAtual = dataAtual.getDate();
 
         // Verificar se o dia atual está entre 15 e 20
-        if (diaAtual >= 1 && diaAtual <= 10) {
+        if (diaAtual >= 1 && diaAtual <= 11) {
             // Liberar a página para interação
             document.getElementById('banner').style.display = 'none';  // Esconde o banner
             document.body.style.pointerEvents = 'auto';  // Libera a interação na página
